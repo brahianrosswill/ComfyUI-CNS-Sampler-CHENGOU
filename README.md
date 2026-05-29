@@ -101,10 +101,10 @@ alpha_exp_interp = False
 
 本节点内置了一个基于 sigma schedule 的近似 gamma matrix，开箱即用无需额外文件。
 
-如果你想使用官方精确的 gamma matrix，可以从官方仓库获取：
+如果你有官方仓库里的 gamma_matrix_scaled.pt，放到 node 文件夹里，它会自动加载。如果不行，内置的基于西格玛的近似方法也没问题。
 https://github.com/HadarDavidson/colored-noise-sampling
 
-下载 `gamma_matrix/gamma_matrix_scaled.pt` 后，填入 `gamma_matrix_pt` 参数路径即可。
+下载 `gamma_matrix/gamma_matrix_scaled.pt` 
 
 ---
 
@@ -224,10 +224,11 @@ alpha_exp_interp = False
 
 The node ships with a built-in approximation of the gamma matrix derived from the sigma schedule — no extra files needed to get started.
 
-For the best accuracy, you can use the official precomputed matrix from the paper's repository:
+If you have gamma_matrix_scaled.pt from the official repo, put it in the node folder and it loads automatically. If not, there's a built-in sigma-based approximation that works fine.
+
 https://github.com/HadarDavidson/colored-noise-sampling
 
-Download `gamma_matrix/gamma_matrix_scaled.pt` and point `gamma_matrix_pt` to it.
+Download `gamma_matrix/gamma_matrix_scaled.pt` 
 
 ---
 
